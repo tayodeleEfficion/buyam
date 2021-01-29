@@ -1,12 +1,12 @@
-import React, {useState} from "react";
-import { Switch, Text, TextInput } from "react-native";
-import ListingEditScreen from "./app/screens/ListingEditScreen"
+import React, {useState} from 'react'
+import { StyleSheet, Text, View } from 'react-native'
 import Screen from "./app/components/Screen"
-  
-export default function App() {
-  return (
-     <Screen>
+import ImageInputList from "./app/components/ImageInputList"
+import ListingEditScreen from './app/screens/ListingEditScreen'
 
-     </Screen>
-  );
+
+export default function App() {
+  return <ListingEditScreen/>
 }
+
+const styles = StyleSheet.create({})
