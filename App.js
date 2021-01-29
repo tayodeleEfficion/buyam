@@ -1,12 +1,17 @@
+import { NavigationContainer } from '@react-navigation/native'
 import React, {useState} from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { Button, StyleSheet, Text, View } from 'react-native'
 import Screen from "./app/components/Screen"
-import ImageInputList from "./app/components/ImageInputList"
-import ListingEditScreen from './app/screens/ListingEditScreen'
+import AppNavigator from './app/Navigation/AppNavigator'
+import NavigationTheme from './app/Navigation/NavigationTheme'
 
 
 export default function App() {
-  return <ListingEditScreen/>
+  return (
+    <NavigationContainer theme={NavigationTheme}>
+       <AppNavigator/>
+    </NavigationContainer>
+  )
 }
 
 const styles = StyleSheet.create({})
